@@ -1,0 +1,105 @@
+/* 
+1. position
+2. box model
+3. Typography
+4. Visuals
+5. Others 
+*/
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('assets/fonts/dmSans/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('assets/fonts/dmSans/DMSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('assets/fonts/dmSans/DMSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/inter/Inter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/inter/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/inter/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+:root {
+    /* color palette */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --worm-black-1: #201E1C;
+    --worm-black-2: #282623;
+    --grey: #BABABA;
+    --off-white: #FAF8F7;
+    --just-white: #FFFFFF;
+    --linear-bg: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+
+    /* font family */
+    --font-family-primary: 'DM Sans', sans-serif;
+    --font-family-secondary: 'Inter', sans-serif;
+
+    /* font sizes */
+    --font-size-xs: 1.2rem;
+    --font-size-sm: 1.4rem;
+    --font-size-md: 1.6rem;
+    --font-size-lg: 1.8rem;
+    --font-size-xl: 2.0rem;
+    --font-size-2xl: 2.4rem;
+    --font-size-3xl: 3rem;
+    --font-size-4xl: 4rem;
+
+    /*line height */
+    --line-height-xs: 1;
+    --line-height-sm: 1.25;
+    --line-height-md: 1.5;
+    --line-height-lg: 1.75;
+    --line-height-xl: 2;
+    --line-height-2xl: 2.5;
+    --line-height-3xl: 3.25;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--font-family-primary);
+    font-size: 62.5%;
+    font-weight: 500;
+    color: var(--worm-black-1);
+}
+
+body {
+    font-size: var(--font-size-sm);
+}
