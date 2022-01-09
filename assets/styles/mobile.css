@@ -16,10 +16,18 @@
     font-weight: var(--font-medium);
 }
 
-.text--button {
+.text--button-1 {
     font-size: var(--font-size-sm);
     line-height: var(--line-height-sm);
     font-weight: var(--font-bold);
+    color: var(--worm-black-1);
+}
+
+.text--small-secondary {
+    font-family: var(--font-family-secondary);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-medium);
+    line-height: var(--line-height-xs);
 }
 
 .text--bold {
@@ -32,6 +40,10 @@
 
 .text--gray-2 {
     color: var(--gray-2);
+}
+
+.text--black {
+    color: var(--black);
 }
 
 .header {
@@ -159,4 +171,58 @@
 
 .section-ad__img {
     width: 100vw;
+}
+
+.section-plan {
+    position: relative;
+    padding: var(--spacing-16) var(--screen-w-sm);
+    text-align: center;
+}
+
+.section-plan__title{
+    letter-spacing: -0.08rem;
+}
+
+.section-plan__description {
+    margin: var(--spacing-6) 0 var(--spacing-9) 0;
+}
+
+.card-plan {
+    display: grid;
+    justify-items: center;
+    gap: var(--spacing-4);
+    padding:  0 var(--spacing-4) var(--spacing-6) var(--spacing-4);
+    margin: 0 auto;
+    max-width: 80%;
+    box-shadow: var(--shadow-lg);
+}
+
+.card-plan__button-top {
+    padding: var(--spacing-2);
+    font-weight: var(--font-bold);
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+    border-radius: var(--rounded-lg);
+}
+
+.card-plan__price-wrapper{
+    display: flex;
+    align-items: flex-start;
+}
+.card-plan__price {
+    font-size: var(--font-size-5xl);
+    font-weight: var(--font-bold);
+    line-height: var(--line-height-none);
+}
+.card-plan__icon-dolar{
+    width: 1.2rem;
+}
+.card-plan__button-choose {
+    display: flex;
+    gap: var(--spacing-3);
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-3);
+    border: 0.2rem solid var(--bitcoin-orange);
+    border-radius: var(--rounded-sm);
 }
