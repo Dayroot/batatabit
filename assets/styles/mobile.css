@@ -26,6 +26,13 @@
     font-weight: var(--font-bold);
 }
 
+.text--white {
+    color: var(--just-white);
+}
+
+.text--gray-2 {
+    color: var(--gray-2);
+}
 
 .header {
     position: relative;
@@ -43,10 +50,6 @@
     gap: var(--spacing-6);
     margin: var(--spacing-9) 0;
     padding-bottom: var(--spacing-6);
-}
-
-.header__title {
-    color: var(--just-white);
 }
 
 .header__description {
@@ -77,9 +80,6 @@
     display: grid;
     gap: var(--spacing-6);
     margin-bottom: var(--spacing-12);
-}
-.section-rate__description  {
-    color: var(--gray-2);
 }
 
 .list-coins {
@@ -116,4 +116,33 @@
     margin-top: var(--spacing-4);
     line-height: var(--line-height-sm);
     background-color: var(--soft-orange);
+}
+
+.section-specs {
+    padding: var( --spacing-16) var(--screen-w-sm) var( --spacing-12) var(--screen-w-sm);
+    background-color: var(--worm-black-1);
+}
+
+.sections-specs__header {
+    margin-bottom: var(--spacing-8);
+    text-align: center;
+}
+
+.section-specs__title {
+    margin-bottom: var(--spacing-6);
+}
+
+.section-specs__content{
+    display: grid;
+    gap: var(--spacing-4);
+}
+
+.section-specs__item {
+    padding: var(--spacing-4) var(--spacing-3);
+    background-color: var(--worm-black-2);
+    border-radius: var(--rounded-sm);
+}
+
+.section-specs__name {
+    margin: var(--spacing-2) 0 var(--spacing-1) 0;
 }
