@@ -95,6 +95,10 @@
 }
 
 .list-coins {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: var(--spacing-8);
     text-align: left;
     padding: 0 var(--spacing-3);
 }
@@ -225,4 +229,21 @@
     padding: var(--spacing-3);
     border: 0.2rem solid var(--bitcoin-orange);
     border-radius: var(--rounded-sm);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-13);
+    padding: var(--spacing-10) var(--screen-w-sm);
+    background-color: var(--bitcoin-orange);
+}
+
+.footer__item {
+    margin-bottom: var(--spacing-2);
+}
+
+.footer__list li:last-child {
+    margin-bottom: 0;
 }
