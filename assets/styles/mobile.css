@@ -1,0 +1,119 @@
+.text--title {
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-lg);
+    font-weight: var(--font-bold);
+}
+
+.text--subtitle {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-md);
+    font-weight: var(--font-bold);
+}
+
+.text--paragraph {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+    font-weight: var(--font-medium);
+}
+
+.text--button {
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-sm);
+    font-weight: var(--font-bold);
+}
+
+.text--bold {
+    font-weight: var(--font-bold);
+}
+
+
+.header {
+    position: relative;
+    padding: var(--spacing-10) var(--screen-w-sm) 0 var(--screen-w-sm);
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    background: var(--linear-bg);
+    background-size: 120%;
+}
+
+
+.header__text-content {
+    display: grid;
+    gap: var(--spacing-6);
+    margin: var(--spacing-9) 0;
+    padding-bottom: var(--spacing-6);
+}
+
+.header__title {
+    color: var(--just-white);
+}
+
+.header__description {
+    color: var(--soft-orange);
+}
+
+.header__button {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    display: flex;
+    gap: var(--spacing-4);
+    padding: var(--spacing-3) var(--spacing-4);
+    color: var(--worm-black-1);
+    background-color: var(--off-white);
+    border-radius: var(--rounded-sm);
+    box-shadow: var(--shadow-lg);
+}
+
+.section-rate {
+    display: grid;
+    padding: var(--spacing-15) var(--screen-w-sm) ;
+    justify-items: center;
+    text-align: center;
+}
+
+.section-rate__middle-content {
+    display: grid;
+    gap: var(--spacing-6);
+    margin-bottom: var(--spacing-12);
+}
+.section-rate__description  {
+    color: var(--gray-2);
+}
+
+.list-coins {
+    text-align: left;
+    padding: 0 var(--spacing-3);
+}
+
+.list-coins__title{
+    color: var(--bitcoin-orange);
+    margin-bottom: var(--spacing-3);
+}
+
+.list-coins__item {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    padding: var(--spacing-2) 0;
+    line-height: var(--line-height-sm);
+}
+
+.list-coins__name {
+    font-size: var(--font-size-md);
+    color: var(--gray-1);
+}
+
+.list-coins__price{
+    min-width: 4rem;
+    margin-right: var(--spacing-2);
+    font-size: var(--font-size-sm);
+    color: var(--gray-2);
+}
+
+.list-coins__date-update {
+    padding: var(--spacing-2);
+    margin-top: var(--spacing-4);
+    line-height: var(--line-height-sm);
+    background-color: var(--soft-orange);
+}

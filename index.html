@@ -4,18 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Batabit es una aplicación web que ayuda a sus usuarios a mantenerse actualizados con la información más relevante sobre las monedas digitales.">
+    <meta name="description" content="Batatabit es una aplicación web que ayuda a sus usuarios a mantenerse actualizados con la información más relevante sobre las monedas digitales.">
     <title>Batabit</title>
     <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="assets/styles/mobile.css">
 </head>
 <body>
-    <header><span>Hello world</span></header>
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
-    <footer></footer>
+    <div class="root-container">
+        <header class="header">
+            <img type="image/svg" src="assets/img/logo.svg" alt="logo batatabit" class="header__img">
+            <div class="header__text-content">
+                <h1 class="header__title text--title">La próxima revolución en el intercambio de criptomonedas.</h1>
+                <p class="header__description text--paragraph">Batabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
+            </div>
+            <a href="" class="header__button">
+                <span class="text--button">Conoce Nuestros Planes</span>
+                <img src="assets/icons/down-arrow.svg" alt="down arrow">
+            </a>
+        </header>
+        <main>
+            <section class="section-rate">
+                <figure class="section-rate__img">
+                    <img type="image/svg" src="assets/img/Bitcoin.svg" alt="bitcoin logo">
+                </figure>
+                <div class="section-rate__middle-content">
+                    <h2 class="text--title">Visibilizamos todas las tasas de cambio.</h2>
+                    <p class="section-rate__description text--paragraph">Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
+                </div>
+                <div class="list-coins">
+                    <h3 class="list-coins__title text--subtitle">Monedas</h3>
+                    <ul>
+                        <li class="list-coins__item">
+                            <span class="list-coins__name">Bitcoin</span>
+                            <span class="list-coins__price">$ 1.96</span>
+                            <figure><img type="image/svg" src="assets/icons/trending-down.svg" alt="trending down"></figure>
+                        </li>
+                        <li class="list-coins__item">
+                            <span class="list-coins__name">Ethereum</span>
+                            <span class="list-coins__price">$ 0.07</span>
+                            <figure><img type="image/svg" src="assets/icons/trending-up.svg" alt="trending up"></figure>
+                        </li>
+                        <li class="list-coins__item">
+                            <span class="list-coins__name">Ripple</span>
+                            <span class="list-coins__price">$ 2.15</span>
+                            <figure><img type="image/svg" src="assets/icons/trending-down.svg" alt="trending down"></figure>
+                        </li>
+                        <li class="list-coins__item">
+                            <span class="list-coins__name">Stellar</span>
+                            <span class="list-coins__price">$ 4.96</span>
+                            <figure><img type="image/svg" src="assets/icons/trending-down.svg" alt="trending down"></figure>
+                        </li>
+                    </ul>
+                    <p class="list-coins__date-update">
+                        <span class="text--bold">Actualizado:</span>
+                        19 Julio 23:45
+                    </p>
+                </div>
+            </section>
+            <section></section>
+            <section></section>
+            <section></section>
+        </main>
+        <footer></footer>
+    </div>
 </body>
 </html>
