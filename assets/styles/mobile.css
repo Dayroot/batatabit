@@ -146,3 +146,17 @@
 .section-specs__name {
     margin: var(--spacing-2) 0 var(--spacing-1) 0;
 }
+
+.section-ad {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.section-ad__title {
+    position: absolute;
+    top: 6.4rem;
+}
+
+.section-ad__img {
+    width: 100vw;
+}
