@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Batatabit es una aplicación web que ayuda a sus usuarios a mantenerse actualizados con la información más relevante sobre las monedas digitales.">
-    <title>Batabit</title>
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/mobile.css">
+    <title>Batatabit</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css">
 </head>
 <body>
     <div class="root-container">
@@ -17,7 +17,7 @@
                 <h1 class="text--white text--title">La próxima revolución en el intercambio de criptomonedas.</h1>
                 <p class="header__description text--paragraph">Batabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
             </div>
-            <a href="" class="header__button">
+            <a href="#plans" class="header__button">
                 <span class="text--button-1">Conoce Nuestros Planes</span>
                 <img type="image/svg" src="assets/icons/down-arrow.svg" alt="down arrow">
             </a>
@@ -69,17 +69,20 @@
                             19 Julio 23:45
                         </p>
                     </div>
-                    <a href="">
+                    <a class="list-coins__button-see" href="">
                         <img type="image/svg" src="assets/icons/right-arrow.svg" alt="right arrow">
                     </a>
                 </div>
             </section>
             <section class="section-specs">
+                <figure class="section-specs__batata-logo">
+                    <img src="assets/icons/batata.svg" alt="batatabin logo">
+                </figure>
                 <div class="sections-specs__header">
                     <h2 class="section-specs__title text--title text--white">Creamos un producto sin comparación.</h2>
                     <p class="text--paragraph text--gray-2">Confiable y diseñado para su uso diario.</p>
                 </div>
-                <div class="section-specs__content">
+                <section class="section-specs__content">
                     <article class="section-specs__item">
                         <img type="image/svg" src="assets/icons/clock.svg" alt="clock icon">
                         <h3 class="section-specs__name text--subtitle text--white">Tiempo real</h3>
@@ -103,26 +106,54 @@
                 </div>
             </section>
             <section class="section-ad">
-                <figure>
-                    <img type="image/jpg" class="section-ad__img" src="assets/img/bitcoinbaby.jpg" alt="woman with two bitcoin coins">
+                <figure class="section-ad__img-wrapper">
+                    <img class="section-ad__img" type="image/jpg" src="assets/img/bitcoinbaby.jpg" alt="woman with two bitcoin coins">
                 </figure>
                 <h2 class="section-ad__title text--title text--white">Conócelo hoy.</h2>
             </section>
-            <section class="section-plan">
+            <section class="section-plan" id="plans">
                 <h2 class="section-plan__title text--title">Escoge el plan que mejor se ajuste a ti.</h2>
                 <p class="section-plan__description text--paragraph text--gray-2">Cualquier plan te da acceso completo a nuestra plataforma.</p>
-                <div class="card-plan">
-                    <a href="" class="card-plan__button-top text--small-secondary">Recomendado</a>
-                    <p class="text--paragraph text--black">Pago Anual</p>
-                    <div class="card-plan__price-wrapper">
-                        <img type="image/svg" class="card-plan__icon-dolar" src="assets/icons/dollar-sign.svg" alt="Dolar symbol" style="color: black;">
-                        <span class="card-plan__price text--black">99</span>
-                    </div>
-                    <p class="text--small-secondary text--gray-2">*Ahorras $129 comparado al plan mensual.</p>
-                    <a class="card-plan__button-choose" href="">
-                        <span class="text--button-1">Escoger este</span>
-                        <img type="image/svg" src="assets/icons/orange-right-arrow.svg" alt="right arrow icon">
-                    </a>
+                <div class="carousel">
+                    <button class="carousel__button-navigator carousel__button-navigator--left">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.589996 10.59L5.17 6L0.589996 1.41L2 -6.16331e-08L8 6L2 12L0.589996 10.59Z" fill="currentcolor"/>
+                        </svg>                
+                    </button>
+                    <section class="carousel__content">
+                        <!-- <div class="carousel__faded-edge"></div>
+                        <div class="carousel__faded-edge carousel__faded-edge--right"></div> -->
+                        <article class="card-plan card-plan--selected">
+                            <p class="card-plan__recommended text--small-secondary">Recomendado</p>
+                            <p class="text--paragraph text--black">Pago Anual</p>
+                            <p class="card-plan__price-wrapper text--black">
+                                <sup>$</sup>
+                                <span class="card-plan__price">99</span>
+                            </p>
+                            <p class="text--small-secondary text--gray-2">*Ahorras $129 comparado al plan mensual.</p>
+                            <a class="card-plan__button-choose" href="">
+                                <span class="text--button-1">Escoger este</span>
+                                <img type="image/svg" src="assets/icons/orange-right-arrow.svg" alt="right arrow icon">
+                            </a>
+                        </article>
+                        <article class="card-plan">
+                            <p class="text--paragraph text--black">Pago Anual</p>
+                            <p class="card-plan__price-wrapper text--black">
+                                <sup>$</sup>
+                                <span class="card-plan__price">99</span>
+                            </p>
+                            <p class="text--small-secondary text--gray-2">*Ahorras $129 comparado al plan mensual.</p>
+                            <a class="card-plan__button-choose" href="">
+                                <span class="text--button-1">Escoger este</span>
+                                <img type="image/svg" src="assets/icons/orange-right-arrow.svg" alt="right arrow icon">
+                            </a>
+                        </article>
+                    </section>
+                    <button class="carousel__button-navigator">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.589996 10.59L5.17 6L0.589996 1.41L2 -6.16331e-08L8 6L2 12L0.589996 10.59Z" fill="currentcolor"/>
+                        </svg>  
+                    </button>
                 </div>
             </section>
         </main>
@@ -137,5 +168,6 @@
             </figure>
         </footer>
     </div>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
