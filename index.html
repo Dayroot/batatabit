@@ -7,7 +7,8 @@
     <meta name="description" content="Batatabit es una aplicación web que ayuda a sus usuarios a mantenerse actualizados con la información más relevante sobre las monedas digitales.">
     <title>Batatabit</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="(min-width:768px)">
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width:1024px)">
 </head>
 <body>
     <div class="root-container">
@@ -69,9 +70,9 @@
                             19 Julio 23:45
                         </p>
                     </div>
-                    <a class="list-coins__button-see" href="">
+                    <button class="list-coins__button-see">
                         <img type="image/svg" src="assets/icons/right-arrow.svg" alt="right arrow">
-                    </a>
+                    </button>
                 </div>
             </section>
             <section class="section-specs">
@@ -106,24 +107,30 @@
                 </div>
             </section>
             <section class="section-ad">
-                <figure class="section-ad__img-wrapper">
+                <picture class="section-ad__img-wrapper">
+                    <source media="(min-width:768px)" srcset="assets/img/bitcoinbaby2x.jpg" >
                     <img class="section-ad__img" type="image/jpg" src="assets/img/bitcoinbaby.jpg" alt="woman with two bitcoin coins">
-                </figure>
+                </picture>
                 <h2 class="section-ad__title text--title text--white">Conócelo hoy.</h2>
             </section>
             <section class="section-plan" id="plans">
                 <h2 class="section-plan__title text--title">Escoge el plan que mejor se ajuste a ti.</h2>
                 <p class="section-plan__description text--paragraph text--gray-2">Cualquier plan te da acceso completo a nuestra plataforma.</p>
                 <div class="carousel">
-                    <button class="carousel__button-navigator carousel__button-navigator--left">
+                    <button class="carousel__button-navigator carousel__button-navigator--left" id="carouselNavigatorLeft">
                         <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.589996 10.59L5.17 6L0.589996 1.41L2 -6.16331e-08L8 6L2 12L0.589996 10.59Z" fill="currentcolor"/>
                         </svg>                
                     </button>
-                    <section class="carousel__content">
-                        <!-- <div class="carousel__faded-edge"></div>
-                        <div class="carousel__faded-edge carousel__faded-edge--right"></div> -->
-                        <article class="card-plan card-plan--selected">
+                    <button class="carousel__button-navigator carousel__button-navigator--right" id="carouselNavigatorRight">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.589996 10.59L5.17 6L0.589996 1.41L2 -6.16331e-08L8 6L2 12L0.589996 10.59Z" fill="currentcolor"/>
+                        </svg>  
+                    </button>
+                    <div class="carousel__faded-edge"></div>
+                    <div class="carousel__faded-edge carousel__faded-edge--right"></div>
+                    <section class="carousel__content" id="carouselContent">
+                        <article class="card-plan">
                             <p class="card-plan__recommended text--small-secondary">Recomendado</p>
                             <p class="text--paragraph text--black">Pago Anual</p>
                             <p class="card-plan__price-wrapper text--black">
@@ -137,10 +144,22 @@
                             </a>
                         </article>
                         <article class="card-plan">
-                            <p class="text--paragraph text--black">Pago Anual</p>
+                            <p class="text--paragraph text--black">6 meses</p>
                             <p class="card-plan__price-wrapper text--black">
                                 <sup>$</sup>
-                                <span class="card-plan__price">99</span>
+                                <span class="card-plan__price">75</span>
+                            </p>
+                            <p class="text--small-secondary text--gray-2">*Ahorras $153 comparado al plan mensual.</p>
+                            <a class="card-plan__button-choose" href="">
+                                <span class="text--button-1">Escoger este</span>
+                                <img type="image/svg" src="assets/icons/orange-right-arrow.svg" alt="right arrow icon">
+                            </a>
+                        </article>
+                        <article class="card-plan">
+                            <p class="text--paragraph text--black">Mensual</p>
+                            <p class="card-plan__price-wrapper text--black">
+                                <sup>$</sup>
+                                <span class="card-plan__price">19</span>
                             </p>
                             <p class="text--small-secondary text--gray-2">*Ahorras $129 comparado al plan mensual.</p>
                             <a class="card-plan__button-choose" href="">
@@ -149,11 +168,6 @@
                             </a>
                         </article>
                     </section>
-                    <button class="carousel__button-navigator">
-                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.589996 10.59L5.17 6L0.589996 1.41L2 -6.16331e-08L8 6L2 12L0.589996 10.59Z" fill="currentcolor"/>
-                        </svg>  
-                    </button>
                 </div>
             </section>
         </main>
